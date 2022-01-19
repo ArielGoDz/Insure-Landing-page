@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: 'Karla', sans-serif;
+  background-color: white;
+  width: 100%;
+  display: table;
+}
+
+#nav-bar {
+  padding: 45px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  margin-left: 50px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul li {
+  position: relative;
+  list-style: none;
+  float: left;
+  padding: 0 6px 45px 6px;
+  margin-right: 55px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: hsl(273, 4%, 51%);
+  font-weight: 500;
+}
+
+.selection::before {
+  display: block;
+  content: '';
+  width: 0%;
+  background: hsl(270, 9%, 17%);
+  height: 2px;
+  top: 0;
+  position: absolute;
+  transition: width 0.8s;
+}
+
+#body {
+  background-color: hsl(256, 26%, 20%);
+  height: 700px;
+  width: 100%;
+ display: inline-block;
+}
+
+.selection:hover::before {
+  width: 100%;
+}
+
+a:hover {
+  color: hsl(270, 9%, 17%);
+}
+
+#plans{
+  color: black;
+  border-color: black;
+  border-style: solid;
+  padding: 5px 15px;
+  transition: background-color 0.8s;
+  border-width: 2px;
+
+}
+
+#plans:hover{
+  color: white;
+  background-color: rgb(0 0 0 / 90%);
+}
+
+#pattern1{
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+#pattern2{
+  position: absolute;
+  top: 600px;
+}
+#intro{
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+  width: 540px;
+  color: white;
+  bottom: 30px;
+  padding-right: 10px;
+}
+h1{
+  font-family: 'DM Serif Display', serif;
+  font-weight: 700;
+  font-size: 380%;
+
+}
+p{
+  font-family: 'Karla', sans-serif;
+  line-height: 1.5;
+}
+hr{
+  margin: 0px 20px 30px 0px;
+  width: 150px;
+  border: 0 0 0 0;
+  color: white;
+}
+#intro-img{
+  margin: 0 auto;
+  position: relative;
+  top: 130px;
+}
+.first-section{
+  margin: 0 20% ;
+}
+#plans-intro{
+  font-family: 'Karla', sans-serif;
+  text-decoration: none;
+  color: white;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  padding: 5px 15px;
+  font-weight: 100;
+  transition: background-color 0.8s;
+}
+#plans-intro:hover{
+  color: hsl(256, 26%, 20%);
+  background-color: white;
+}
